@@ -48,7 +48,7 @@ async function mintNFT(tokenURI) {
     })
 }
 
-mintNFT("ipfs://(paste the cid of nft-metadata.json)")   //QmYvYcFKwHTX4uXrrd9QH63xdDmWbsHQoT6VkepHam2xug  - for reference
+mintNFT("ipfs://")   //QmYvYcFKwHTX4uXrrd9QH63xdDmWbsHQoT6VkepHam2xug  - for reference
 
 
 

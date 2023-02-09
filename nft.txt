@@ -1,0 +1,29 @@
+The contract is built using OpenZeppelin's libraries and is composed of several different parts:
+
+Imports: The contract imports several libraries from OpenZeppelin.
+"@openzeppelin/contracts/token/ERC721/ERC721.sol": This library provides the ERC721 standard for non-fungible tokens.
+"@openzeppelin/contracts/utils/Counters.sol": This library provides a counter utility for generating unique token IDs.
+"@openzeppelin/contracts/access/Ownable.sol": This library provides an Ownable contract, which gives the contract owner special permissions, such as the ability to transfer ownership.
+"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol": This library provides a storage for the token's unique identifier (URI) for each token.
+Contract Definition: The contract definition begins with the line "contract MyNFT is ERC721URIStorage, Ownable". 
+This means that the contract "MyNFT" inherits the properties and functions of the ERC721URIStorage and Ownable contracts.
+
+Counter: The contract uses a counter utility to generate unique token IDs for each NFT that is minted. 
+The counter is defined as a private member of the contract and is named "_tokenIds".
+
+Constructor: The constructor is a special function that is called when the contract is deployed. 
+The constructor sets the name and symbol of the token to "MyNFT" and "NFT" respectively.
+
+Mint Function: The "mintNFT" function is used to mint new NFTs. 
+The function takes two parameters: the recipient's address and a string that represents the token's URI. 
+The function is restricted to the contract owner using the "onlyOwner" modifier. 
+The function increments the counter, generates a new token ID, and mints the NFT to the recipient's address. 
+The function also sets the token's URI.
+
+This contract implements a basic ERC721 token with the ability to mint new NFTs and set a unique identifier for each token. 
+The contract uses OpenZeppelin's libraries to provide the required functionality and 
+the contract owner is given special permissions to mint new NFTs.
+
+
+
+

@@ -1,0 +1,20 @@
+{
+    "attributes": [
+      {
+        "trait_type": "art",
+        "value": "hello folks"
+      },
+      {
+        "trait_type": "paint",
+        "value": "drawing"
+      }
+    ],
+    "description": "hello folks :)",
+    "image": "ipfs://........................................................",
+    "name": "naam"
+  }
+
+
+  
+
+paste the cid of uploaded image/video in line 13  //reference cid...... QmagLTHNs52TzUYbWHTiMufMdNctRtdHscujYi8Nnizse3
